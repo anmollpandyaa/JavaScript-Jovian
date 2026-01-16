@@ -11,7 +11,7 @@ function isPalindrome(number) {
         number = Math.floor(number / 10);
     }
     
-    return reversed == original
+    return reversed === original
 }
 
 console.log(isPalindrome(num) ? "Palindrome" : "Not Palindrome")
