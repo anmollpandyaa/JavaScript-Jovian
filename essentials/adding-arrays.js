@@ -19,3 +19,4 @@ let nums3 = [7, 8, 9]
 // add more than two arrays, more preffered method
 let allNums = [...nums1, ...nums2, ...nums3]
 console.log(allNums)
+// ... is called spread operator
