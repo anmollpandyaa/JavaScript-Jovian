@@ -37,3 +37,16 @@ console.log(Object.entries(boys))
 
 console.log(boys.hasOwnProperty("1"))
 console.log(boys[1] ?? "not present")
+
+// de structuring of object
+// crucial concept for react, used in props
+
+const data = {
+    name: "anmoll",
+    specialisation: "cloud"
+}
+
+const {name: username} = data
+console.log(username)
+const {specialisation} = data
+console.log(specialisation)
