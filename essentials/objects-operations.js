@@ -10,7 +10,7 @@ const obj2 = {
 
 // can also assign like this. optional but recommended
 // const names = Object.assign({}, obj1, obj2)
-// it acts as: {} -> source obj1 -> target
+// it acts as: {} -> source obj1, obj2 -> target
 // without {}, data goes in obj1, with {}, all data combined and get inside {}
 
 const names = Object.assign(obj1, obj2)
