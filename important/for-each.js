@@ -47,3 +47,5 @@ const team = [
 team.forEach((item) => {
     console.log(item.socials);
 })
+
+// for each loop never returns anything, even if used return keyword or stored in a variable

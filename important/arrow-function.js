@@ -18,3 +18,5 @@ const addNumsOnceAgain = (num1, num2) => ( num1, num2 )
 const getName = () => ({name: "Anmoll", skill: "pretty much everything"})
 
 console.log(getName())
+
+// if i start a block, i need to explicitly return, else it will be returned implicitly

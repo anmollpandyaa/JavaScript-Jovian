@@ -10,7 +10,7 @@
 // semicolon is required to end context after writing iife, sometimes may not produce error but recommended
 
 // treat it just like a function, below i wrote arrow function, passed arguments, wrapped inside console.log
-console.log(((num1, num2) => num1 + num2)(1602, 402))
+console.log(((num1, num2) => num1 + num2)(1601, 403))
 
 // iifes are good for temporary calculation and helper function
 // named iife means writing a function with name, unnamed can be arrow one
