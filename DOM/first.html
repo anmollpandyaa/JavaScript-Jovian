@@ -23,6 +23,7 @@
     }
 
     addSkill('JavaScript')
+    addSkill('Backend Engineering')
     addSkill('Node.js')
 
     // function to edit a list item
@@ -37,11 +38,15 @@
     editItem('LeetCode')
 
     ;(function createOutro(message){
-        const outro = document.createElement('h4')
+        const outro = document.createElement('p')
         outro.appendChild(document.createTextNode(message))
 
         document.body.appendChild(outro)
-    })('will see you in next batch')
+    })('will see you in next batch♥')
+
+    // removing an element
+    const lastElement = document.querySelector('li:last-child')
+    lastElement.remove()
 
     console.log("Script running");
 </script>
