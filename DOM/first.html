@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Basics</title>
+</head>
+<body style="background-color: black; color: bisque; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <h1 class="greet">Hi there!</h1>
+    <p class="intro">following is what I am learning now a days:</p>
+    <ul class="skills">
+        <li>DSA</li>
+    </ul>
+</body>
+<script>
+    function addSkill(skill){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(skill))
+        document.querySelector('.skills').appendChild(li)
+    }
+</script>
+</html>
