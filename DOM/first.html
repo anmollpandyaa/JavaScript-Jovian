@@ -12,10 +12,37 @@
     </ul>
 </body>
 <script>
+
+    // function to create element and append to ul
     function addSkill(skill){
         const li = document.createElement('li')
         li.appendChild(document.createTextNode(skill))
         document.querySelector('.skills').appendChild(li)
+
+        // can also append text in li using innerText, but not optimal
     }
+
+    addSkill('JavaScript')
+    addSkill('Node.js')
+
+    // function to edit a list item
+    function editItem(newItem){
+        const item = document.querySelector('li:nth-child(1)')
+        const newOne = document.createElement('li')
+        newOne.innerText = newItem
+
+        item.replaceWith(newOne)
+    }
+
+    editItem('LeetCode')
+
+    ;(function createOutro(message){
+        const outro = document.createElement('h4')
+        outro.appendChild(document.createTextNode(message))
+
+        document.body.appendChild(outro)
+    })('will see you in next batch')
+
+    console.log("Script running");
 </script>
 </html>
