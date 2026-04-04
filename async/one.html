@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS</title>
+</head>
+<body>
+    <h1 class="greeting">Hi there!</h1>
+    <h4 class="message">Welcome to my webpage</h4>
+    <p class="delayed-msg">hope you like visiting</p>
+    <button class="stop">Stop Change</button>
+</body>
+<script>
+    const changeMsg = setTimeout(function () {
+        document.querySelector('.delayed-msg').innerText = 'nah, I knw you are not'
+    }, 4000)
+
+    document.querySelector('.stop').addEventListener('click', function () {
+        clearTimeout(changeMsg)
+        console.log("Useless message stopped...");
+    }, false)
+</script>
+</html>
