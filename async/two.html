@@ -10,25 +10,34 @@
 <body>
     <h1 class="greet">Greetings Users!</h1>
     <h4 class="message">Welcome to Anmoll's Webpage</h4>
-    <p id="loading"></p>
+    <button id="start">Start loading</button>
+    &nbsp;&nbsp;
     <button id="stop">Stop loading</button>
+    <p id="loading"></p>
 </body>
 <script>
+    let printLoading
     const loadingText = document.querySelector('#loading')
     let dots = ''
 
-    const printLoading = setInterval(function () {
-        dots += '.'
+    document.querySelector('#start').addEventListener('click', function () {
+        if (!printLoading) {
+            printLoading = setInterval(function () {
+                dots += '.'
 
-        if (dots.length > 3) dots = ''
-        loadingText.innerText = `loading${dots}`
-    }, 500)
+                if (dots.length > 3) dots = ''
+                loadingText.innerText = `loading${dots}`
+            }, 500)
+        }
+    }, false)
 
-    document.querySelector('#stop').addEventListener('click', function(){
+    document.querySelector('#stop').addEventListener('click', function () {
         clearInterval(printLoading)
+        printLoading = null
         loadingText.innerText = "loading stopped!"
         console.log("no more loading")
     }, false)
-    
+
 </script>
+
 </html>
