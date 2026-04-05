@@ -8,3 +8,10 @@ new Promise(function(resolve, reject){
 }).then(function () {
     console.log("executed");
 })
+
+// we can also pass data from a promise
+new Promise(function(resolve, reject){
+    resolve({username: "@anmollpandyaa", designation: "CEO of Procrastination"})
+}).then(function(user){
+    console.log(user);
+})
